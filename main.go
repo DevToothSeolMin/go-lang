@@ -5,13 +5,16 @@ import (
 )
 
 func canDrink(age int) bool {
-	if koreanAge := age + 2; koreanAge < 18 {
+	switch age {
+	case 10:
 		return false
+	case 18:
+		return true
 	}
 
-	return true
+	return false
 }
 
 func main() {
-	fmt.Println(canDrink(16))
+	fmt.Println(canDrink(18))
 }
