@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go-lang/banking"
+	"go-lang/accounts"
 )
 
 func main() {
-	account := banking.Account{Owner: "sul", Balance: 1000}
+	account := accounts.NewAccount("sul")
 	fmt.Println(account)
 }
