@@ -1,15 +1,11 @@
 package main
 
-import "fmt"
-
-type person struct {
-	name    string
-	age     int
-	favFood []string
-}
+import (
+	"fmt"
+	"go-lang/banking"
+)
 
 func main() {
-	favFood := []string{"ramen", "pizza"}
-	sul := person{name: "sul", age: 32, favFood: favFood}
-	fmt.Println(sul)
+	account := banking.Account{Owner: "sul", Balance: 1000}
+	fmt.Println(account)
 }
