@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	a := 2
-	b := &a
-	*b = 10
-	fmt.Println(a)
+	names := [5]string{"sul", "min", "del"}
+	names[3] = "all"
+	names[4] = "Dall"
+	fmt.Println(names)
 }
