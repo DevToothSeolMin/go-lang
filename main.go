@@ -5,8 +5,6 @@ import (
 )
 
 func main() {
-	names := [5]string{"sul", "min", "del"}
-	names[3] = "all"
-	names[4] = "Dall"
+	names := []string{"sul", "min", "del"}
 	fmt.Println(names)
 }
