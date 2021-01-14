@@ -4,15 +4,14 @@ import (
 	"fmt"
 )
 
-func superAdd(numbers ...int) int {
-	total := 0
-	for _, number := range numbers {
-		total += number
+func canDrink(age int) bool {
+	if age < 18 {
+		return false
 	}
-	return total
+
+	return true
 }
 
 func main() {
-	total := superAdd(1, 2, 3, 4, 5, 6)
-	fmt.Println(total)
+	fmt.Println(canDrink(16))
 }
