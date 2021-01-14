@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	names := []string{"sul", "min", "del"}
-	names = append(names, "lol")
+	names := map[string]string{"name": "sul", "age": "32"}
 	fmt.Println(names)
 }
