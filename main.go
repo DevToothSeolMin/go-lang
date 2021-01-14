@@ -10,5 +10,6 @@ func lenAndUpper(name string) (int, string) {
 }
 
 func main() {
-	fmt.Println(lenAndUpper("sul"))
+	totalLength, upperName := lenAndUpper("sul")
+	fmt.Println(totalLength, upperName)
 }
